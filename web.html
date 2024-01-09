@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website Design</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="web.html" class="logo-anchor"
+          ><img
+            src="https://kuu.ac.in/wp-content/uploads/2022/04/KUU-LOGO-NEW-200x202.png"
+            alt=""
+            width="80px"
+            height="80px"
+          />
+          <h5>KK College</h5>
+        </a>
+        <div class="nav-links" id="navlinks">
+          <span class="material-symbols-outlined" onclick="hidemenu()">
+            close
+          </span>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showmenu()">
+          menu
+        </span>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis fuga
+          nobis nesciunt officia quae ipsa, officiis suscipit earum enim ipsum
+          minus asperiores <br />inventore sunt dolore unde quis sapiente. In,
+          perferendis?
+        </p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+      </div>
+    </section>
+    <!-- COURSE -->
+    <section class="course">
+      <h1>Courses We Offers</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        delectus aperiam iusto, porro quae saepe sint commodi itaque
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat,
+            officia ea qui, possimus itaque, in nemo aspernatur cumque labore
+            quos voluptates esse odit placeat obcaecati neque perspiciatis quasi
+            sunt.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat,
+            officia ea qui, possimus itaque, in nemo aspernatur cumque labore
+            quos voluptates esse odit placeat obcaecati neque perspiciatis quasi
+            sunt.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat,
+            officia ea qui, possimus itaque, in nemo aspernatur cumque labore
+            quos voluptates esse odit placeat obcaecati neque perspiciatis quasi
+            sunt.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- javascript for toggle menu -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
